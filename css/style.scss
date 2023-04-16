@@ -1,0 +1,322 @@
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;   
+}
+
+:root {
+    --font-primary: 'Chakra Petch', sans-serif;
+}
+
+body {
+    background-color: #333;
+    position: relative;
+}
+
+.wrapper {
+    width: 70vw;
+    margin: 0 auto;
+    position: relative;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    font-family: var(--font-primary);
+    z-index: 1;
+    }
+    
+    .flex {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        
+    }
+
+    h1 {
+        color: #fff;
+        text-transform: uppercase;
+        font-size: 2rem;
+        
+}
+
+#menu-items {
+    margin: 1rem;
+    list-style: none;
+    .menu-item {
+        font-size: 1.8rem;
+        display: block;
+        
+       
+        a {
+            text-decoration: none;
+            color: #fff;
+        }
+    }
+}
+
+// Changes opacity to 0.3 for every item
+#menu-items:hover > .menu-item {
+    opacity: 0.3;
+}
+// Counter-acts the above code, making the hovered item to be opacity 1, while the rest are changed to 0.3 opacity
+#menu-items:hover > .menu-item:hover {
+    opacity: 1;
+}
+ 
+// section code
+section {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--font-primary);
+}
+
+// home area
+
+.home {
+    .left-box {
+        width: 70%;
+        height: 600px;
+        background-color: #000;
+        border-radius: 20px;
+    }
+    .right-box {
+        
+        width: 70%;
+        min-height: 400px;
+        background-color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 1rem;
+        border-radius: 20px;
+        margin-left: -150px;
+        h2 {
+            font-size: 2rem;
+            
+        }
+
+        p {
+            margin: 20px 0;
+        }
+    }
+}
+
+// about section
+
+#about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+        .box {
+        width: 50%;
+        min-height: 400px;
+        background-color: #fff;
+        text-align: left;
+        padding: 1rem;
+        border-radius: 20px;
+        margin-left: -150px;
+    
+    
+        h2 {
+            font-size: 2rem;
+            
+        }
+
+        p {
+            margin: 20px 0;
+        }
+    }
+
+ }
+
+// skills section
+
+#skills {
+    
+       display: grid;
+       grid-template-columns: repeat(2, 1fr);
+    .learning {
+        min-height: 400px;
+        background-color: #fff;
+        text-align: left;
+        padding: 1rem;
+        border-radius: 20px;
+    }
+
+
+
+    .skills-area h2 {
+        font-size: 3rem;
+        margin-bottom: 10px;
+    }
+
+
+    
+
+    #my-skills-list h3 {
+        font-size: 2rem;
+        margin-bottom: 10px;
+    }
+
+    // skills animation
+
+  
+
+  
+
+    .bar {
+        height: 16px;
+        background-color:#F806CC;
+        margin-bottom: 15px;
+        border-radius: 15px;
+    }
+
+    .bar::before {
+        content: "";
+        background-color: #570A57;
+        display: inline-block;
+        padding: 8px;
+        border-radius: inherit;
+        animation: load 3s 0s;
+        -webkit-animation: load 3s 0s;
+        -moz-animation: load 3s 0s;
+        -o-animation: load 3s 0s;
+    }
+
+
+    .bar.bar1::before {
+        width: calc(80% - 10px);
+    }
+
+    .bar.bar2::before {
+        width: calc(60% - 10px);
+    }
+
+    .bar.bar3::before {
+        width: calc(10% - 10px);
+    }
+
+    .bar.bar4::before {
+        width: calc(50% - 10px);
+    }
+
+    .bar.bar5::before {
+        width: calc(25% - 10px);
+    }
+
+    @keyframes load {
+        from {
+            width: 0%;
+        }
+    }
+
+    @-webkit-keyframes load {
+        from {
+            width: 0%;
+        }
+    }
+
+    @-moz-keyframes load {
+        from {
+            width: 0%;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+// button style
+.button {
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 20px;
+    display: inline-block;
+    letter-spacing: 2px;
+    background-color: #333;
+}
+
+// Mouse blob
+#blob {
+    background-color: #fff;
+    width: 200px;
+    aspect-ratio: 1;
+    position: absolute;
+    // left: 50%;
+    // top: 50%;
+    left: var(--mouse-x);
+    top: var(--mouse-y);
+    translate: -50% -50%;
+    border-radius: 50%;
+    z-index: -2;
+    background: linear-gradient(
+        to right,
+        aquamarine,
+        mediumpurple
+    );
+    animation: rotate 20s infinite ;
+    filter: blur(200px);
+}
+
+@keyframes rotate {
+    from {
+        rotate: 0deg
+    }
+
+    50% {
+        scale: 1 1.5;
+    }
+
+    to {
+        rotate: 360deg;
+    }
+}
+
+#blur {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: -2;
+    backdrop-filter: blur(200px);
+};
+
+
+
+// social footer
+
+.socials {
+    position: fixed;
+    left: 25px;
+    bottom: 50%;
+    ul {
+        list-style: none;
+        li {
+            margin: 1rem;
+            a {
+                text-decoration: none;
+                i {
+                color: #fff;
+                font-size: 2.5rem;
+        }
+            }
+            
+        }
+    }
+    
+    
+}
