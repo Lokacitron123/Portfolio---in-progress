@@ -126,53 +126,15 @@ section {
   min-height: 400px;
   background-color: #fff;
   text-align: left;
-  padding: 1rem;
+  padding: 3rem;
   border-radius: 20px;
 }
-#skills .skills-area h2 {
-  font-size: 3rem;
-  margin-bottom: 10px;
+#skills .learning ul {
+  margin-top: 10px;
+  margin-left: 20px;
 }
-#skills #my-skills-list h3 {
-  font-size: 2rem;
-  margin-bottom: 10px;
-}
-#skills .bar {
-  height: 16px;
-  background-color: #F806CC;
-  margin-bottom: 15px;
-  border-radius: 15px;
-}
-#skills .bar::before {
-  content: "";
-  background-color: #570A57;
-  display: inline-block;
-  padding: 8px;
-  border-radius: inherit;
-  animation: load 3s 0s;
-  -webkit-animation: load 3s 0s;
-  -moz-animation: load 3s 0s;
-  -o-animation: load 3s 0s;
-}
-#skills .bar.bar1::before {
-  width: calc(80% - 10px);
-}
-#skills .bar.bar2::before {
-  width: calc(60% - 10px);
-}
-#skills .bar.bar3::before {
-  width: calc(10% - 10px);
-}
-#skills .bar.bar4::before {
-  width: calc(50% - 10px);
-}
-#skills .bar.bar5::before {
-  width: calc(25% - 10px);
-}
-@keyframes load {
-  from {
-    width: 0%;
-  }
+#skills .learning .button {
+  margin-top: 10px;
 }
 
 .button {

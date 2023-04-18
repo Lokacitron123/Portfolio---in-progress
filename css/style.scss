@@ -149,88 +149,21 @@ section {
         min-height: 400px;
         background-color: #fff;
         text-align: left;
-        padding: 1rem;
+        padding: 3rem;
         border-radius: 20px;
-    }
+        ul {
+            margin-top: 10px;
+            margin-left: 20px;
+        }
 
-
-
-    .skills-area h2 {
-        font-size: 3rem;
-        margin-bottom: 10px;
-    }
-
-
-    
-
-    #my-skills-list h3 {
-        font-size: 2rem;
-        margin-bottom: 10px;
-    }
-
-    // skills animation
-
-  
-
-  
-
-    .bar {
-        height: 16px;
-        background-color:#F806CC;
-        margin-bottom: 15px;
-        border-radius: 15px;
-    }
-
-    .bar::before {
-        content: "";
-        background-color: #570A57;
-        display: inline-block;
-        padding: 8px;
-        border-radius: inherit;
-        animation: load 3s 0s;
-        -webkit-animation: load 3s 0s;
-        -moz-animation: load 3s 0s;
-        -o-animation: load 3s 0s;
-    }
-
-
-    .bar.bar1::before {
-        width: calc(80% - 10px);
-    }
-
-    .bar.bar2::before {
-        width: calc(60% - 10px);
-    }
-
-    .bar.bar3::before {
-        width: calc(10% - 10px);
-    }
-
-    .bar.bar4::before {
-        width: calc(50% - 10px);
-    }
-
-    .bar.bar5::before {
-        width: calc(25% - 10px);
-    }
-
-    @keyframes load {
-        from {
-            width: 0%;
+        .button {
+            margin-top: 10px;
         }
     }
 
-    @-webkit-keyframes load {
-        from {
-            width: 0%;
-        }
-    }
 
-    @-moz-keyframes load {
-        from {
-            width: 0%;
-        }
-    }
+
+ 
 }
 
 
@@ -320,3 +253,82 @@ section {
     
     
 }
+
+
+
+
+// code for animation 
+   // .skills-area h2 {
+    //     font-size: 3rem;
+    //     margin-bottom: 10px;
+    //     color: #fff;
+    // }
+
+
+    // #my-skills-list h3 {
+    //     color: #fff;
+    //     font-size: 1rem;
+    //     padding: 10px;
+    //     margin-bottom: 10px;
+    // }
+
+    // // skills animation
+
+
+    // .bar {
+    //     height: 10px;
+    //     background-color:#F806CC;
+    //     margin-bottom: 10px;
+    //     border-radius: 15px;
+    // }
+
+    // .bar::before {
+    //     content: "";
+    //     background-color: #570A57;
+    //     display: inline-block;
+    //     padding: 10px;
+    //     border-radius: inherit;
+    //     animation: load 6s 0s;
+    //     -webkit-animation: load 6s 0s;
+    //     -moz-animation: load 6s 0s;
+    //     -o-animation: load 6s 0s;
+    // }
+
+
+    // .bar.bar1::before {
+    //     width: calc(80% - 10px);
+    // }
+
+    // .bar.bar2::before {
+    //     width: calc(60% - 10px);
+    // }
+
+    // .bar.bar3::before {
+    //     width: calc(70% - 10px);
+    // }
+
+    // .bar.bar4::before {
+    //     width: calc(50% - 10px);
+    // }
+
+    // .bar.bar5::before {
+    //     width: calc(40% - 10px);
+    // }
+
+    // @keyframes load {
+    //     from {
+    //         width: 0%;
+    //     }
+    // }
+
+    // @-webkit-keyframes load {
+    //     from {
+    //         width: 0%;
+    //     }
+    // }
+
+    // @-moz-keyframes load {
+    //     from {
+    //         width: 0%;
+    //     }
+    // }
